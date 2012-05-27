@@ -87,7 +87,11 @@
   <project path="system/vold" name="platform/system/vold" />
 
   <!-- Nexus One specific things -->
-  <project path="device/htc/passion" name="android_device_htc_passion" remote="korline" revision="b2g">
-  <project path="device/htc/passion-common" name="android_device_htc_passion-common" remote="korline" revision="b2g">
+  <project path="device/htc/passion" name="android_device_htc_passion" remote="korline" revision="ics">
+  <project path="vendor/htc/passion" name="android_vendor_htc_passion" remote="korline" revision="ics" />
+  <project path="vendor/qsd8k" name="android_vendor_qsd8k" remote="korline" revision="ics" />
+  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="korline" revision="ics" />
+  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
+  
 
 </manifest>
