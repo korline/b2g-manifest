@@ -5,6 +5,8 @@
            fetch="https://android.googlesource.com/" />
   <remote name="b2g"
           fetch="git://github.com/mozilla-b2g/" />
+  <remote name="korline"
+          fetch="git://github.com/korline/" />
   <default revision="master"
            remote="aosp"
            sync-j="4" />
@@ -84,14 +86,8 @@
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
 
-  <!-- Emulator specific things -->
-  <project path="development" name="platform/development" />
-  <project path="device/generic/goldfish" name="device/generic/goldfish" />
-  <project path="external/qemu" name="platform/external/qemu" />
-  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" />
-  <project path="prebuilts/tools" name="platform/prebuilts/tools" />
-  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" />
-  <project path="sdk" name="platform/sdk" />
+  <!-- Nexus One specific things -->
+  <project path="device/htc/passion" name="android_device_htc_passion" remote="korline" revision="b2g">
+  <project path="device/htc/passion-common" name="android_device_htc_passion-common" remote="korline" revision="b2g">
 
 </manifest>
